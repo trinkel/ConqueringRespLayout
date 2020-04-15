@@ -1,21 +1,22 @@
 * { box-sizing: border-box; }
 
-body {
+body { 
     margin: 0;
     font-family: sans-serif;
-}
+} 
 
-.container {
+.hero {
+    width: 100%;
     background: #23424A;
-    color: white;
-
+}
+.container {
     width: 80%;
+    max-width: 750px;
     margin: 0 auto;
-    
-    padding: 2em;
-    min-height: 300px; /* Kevin's answer left this out. */
+    padding: 50px 0; 
 }
 
 .intro-content {
     width: 50%;
+    color: white;
 }

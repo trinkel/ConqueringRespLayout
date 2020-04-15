@@ -1,19 +1,17 @@
 * { box-sizing: border-box; }
 
-body {
+body { 
     margin: 0;
     font-family: sans-serif;
-}
+} 
 
 .container {
+    width: 80%;
+    max-width: 750px;
+    margin: 0 auto;
     background: #23424A;
     color: white;
-
-    width: 80%;
-    margin: 0 auto;
-    
-    padding: 2em;
-    min-height: 300px; /* Kevin's answer left this out. */
+    padding: 50px 0; 
 }
 
 .intro-content {
