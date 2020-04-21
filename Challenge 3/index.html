@@ -21,8 +21,14 @@
 	</header>
 	<script>
 		function handleButtonClick() {
+			document.getElementById("learn").style.transition = "all 0ms";
 			document.getElementById("learn").classList.add('actionClick');
-			setTimeout(() => {document.getElementById("learn").classList.remove('actionClick')}, 100);
+			setTimeout(() => {
+				document.getElementById("learn").style.transition = "all 2s ease-out";
+				document.getElementById("learn").classList.remove('actionClick')
+				},
+				200
+			)
 		}
 	</script>
 </body>
