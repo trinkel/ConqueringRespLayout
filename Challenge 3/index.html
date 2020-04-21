@@ -13,10 +13,16 @@
 			<div class="intro">
 				<h1>Responsive layouts don't have to be a struggle</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur distinctio laudantium dolores. Nulla quibusdam reprehenderit eum sit minus aliquid!</p>
-				<button class="action" tabindex="1">
+				<button id="learn" class="action" tabindex="1" onClick=handleButtonClick()>
 					I want to learn
 				</button>
 			</div>
 		</div>
 	</header>
+	<script>
+		function handleButtonClick() {
+			document.getElementById("learn").classList.add('actionClick');
+			setTimeout(() => {document.getElementById("learn").classList.remove('actionClick')}, 100);
+		}
+	</script>
 </body>

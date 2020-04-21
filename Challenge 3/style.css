@@ -53,7 +53,7 @@ p {
 	text-transform: uppercase;
 	letter-spacing: .08em;
 	color: #072A2D;
-	
+	cursor: pointer;	
 }
 
 .action:hover {
@@ -62,4 +62,11 @@ p {
 
 .action:focus {
 	background-color: orange;
+}
+
+.action.actionClick {
+	background-color: white;
+	color: white;
+	box-shadow: 0px 0px 80px 80px rgba(255,255,255,.5);
+	transition: all 3ms ease-out;
 }
