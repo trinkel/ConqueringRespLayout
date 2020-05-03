@@ -140,7 +140,7 @@ header {
 }
 
 .nav__item {
-    padding: .75em 1.5em;
+    padding: .5em;
 }
 
 .nav__link {
@@ -199,12 +199,6 @@ header {
 
 
 @media (min-width: 800px) {
-
-    
-    header{
-        text-align: left;
-    }
-
     .nav-toggle {
         display: none;
     }
@@ -213,9 +207,7 @@ header {
         visibility: visible;
         position: relative;
         height: auto;
-        width: 100%;
         display: flex;
-        justify-content: space-between;
     }
 
     .nav__list {
@@ -231,14 +223,12 @@ header {
         padding: 0;
     }
 
-    .nav,
     .nav__item + .nav__item {
         margin-left: 2em;
     }
 
     .row {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
