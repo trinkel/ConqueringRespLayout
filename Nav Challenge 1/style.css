@@ -221,6 +221,10 @@ header {
     .nav__list {
         margin: 0;
     }
+
+    .nav__list--primary {
+        margin: 0 auto;
+    }
     
     .nav__item {
         display: inline;
