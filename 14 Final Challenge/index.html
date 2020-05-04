@@ -7,107 +7,147 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<head>
-		<nav>
-			<div class="nav__toggle"></div>
-			<div class="logo"></div>
+<body style="background-color: seagreen">
+	<header>
+		<div class="container row">
+			<button class="nav-toggle" aria-label="open navigation">
+				<span class="hamburger"></span>
+			</button>
+			<a class="logo" href="#">
+				<img src="img/logo.svg" alt="conquering responsive layouts">
+			</a>
 			<nav class="nav">
 				<ul class="nav__list">
-					<li class="nav__item"></li>
-					<li class="nav__item"></li>
-					<li class="nav__item"></li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">About</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Contact</a>
+					</li>
 				</ul>
 				<ul class="nav__list">
-					<li class="nav__item"></li>
-					<li class="nav__item nav__item-button"></li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Sign In</a>
+					</li>
+					<li class="nav__item nav__item--button">
+						<a href="#" class="nav__link">Sign Up</a>
+					</li>
 				</ul>
 			</nav>
-		</nav>
-		<header class="intro">
+		</div>
+	</header>	
+
+	<section class="hero">
+		<div class="container row">
 			<div class="col intro__title">
 				<h1>
-					<em></em>
+					Responsive layouts <em>don’t have to be a struggle</em>
 				</h1>
 			</div>
 			<div class="col intro__text">
-				<p></p>
-				<a class="intro__cta"></a>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam laudantium esse perspiciatis cumque id ex a magnam sunt assumenda repellendus.</p>
+				<a href="#" class="btn intro__cta">I want to learn</a>
 			</div>
-		</header>
-		<main class="main">
-			<section class="container row section__1">
-				<div class="col">
-					<h2></h2>
-					<p></p>
+		</div>
+	</section>
+
+	<main class="main">
+		<section class="container row section__1">
+			<div class="col">
+				<h2>Mobile-first</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem cupiditate nisi magni at ipsam illum. Eos labore facilis ipsam culpa necessitatibus molestias mollitia temporibus.</p>
+			</div>
+			<div class="col">
+				<h2>Efficient</h2>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed qui quam dolorum asperiores nulla facilis eaque, quis quod fugiat. Vero ratione suscipit eius dolorem?</p>
+			</div>
+			<div class="col">
+				<h2>Done right</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut voluptatem exercitationem sit minus, culpa nostrum qui molestiae, vero ut accusantium, blanditiis dolorum dolores.</p>
+			</div>
+		</section>
+		<section class="container row section__2">
+			<article class="col article">
+				<h2>It doesn’t have to be so hard</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque obcaecati et illum neque ratione, exercitationem, at ipsum autem eligendi omnis deserunt quibusdam architecto minus delectus! Asperiores quo quisquam, ratione pariatur illo eum similique error vitae provident aperiam, optio dolorum cum. Illo voluptates eius unde praesentium amet adipisci quibusdam.</p>
+				<img src="img/the-image.jpg" alt="UX design skteches" class="section__2--img">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam velit esse molestias, beatae adipisci error cupiditate possimus facere repudiandae sequi tempore illo nisi ipsum! Quo quia voluptate fugit quam veritatis tenetur est, molestias dolorum quidem ullam pariatur voluptatem saepe provident quis nihil excepturi ut dicta nobis doloremque rem.</p>
+			</article>
+			<sidebar class="col sidebar">
+				<div class="callout">
+					<h2>Break it down</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum sed aliquam reiciendis dolore ex est quisquam. Aut, sit quis.</p>
 				</div>
-				<div class="col">
-					<h2></h2>
-					<p></p>
+				<div class="callout">
+					<h2>Work your way up</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsam cum! Nesciunt eum, nihil quaerat iste alias fugiat numquam.</p>
 				</div>
-				<div class="col">
-					<h2></h2>
-					<p></p>
+				<div class="callout">
+					<h2>Break it down</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis porro dignissimos voluptatem laborum eveniet natus exercitationem ipsa. Et, exercitationem.</p>
 				</div>
-			</section>
-			<section class="container row section__2">
-				<article class="col article">
-					<h2></h2>
-					<p></p>
-					<img src="" alt="">
-					<p></p>
-				</article>
-				<sidebar class="col sidebar">
-					<div class="callout"><h2>
-						<p></p>
-					</h2>
+			</sidebar>
+		</section>
+		<footer>
+			<h2 class="footer__heading">just scratching the surface</h2>
+				<div class="col footer__column-1">
+					<h3>About our company</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam omnis minus dignissimos incidunt minima, assumenda quibusdam, esse dolorem delectus adipisci maxime animi a consequatur!</p>
 				</div>
-					<div class="callout">
-						<h2></h2>
-						<p></p>
+				<nav class="footer__nav">
+					<div class="footer__nav-group">
+						<h3>Getting around</h3>
+						<ul class="footer__nav-list">
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">Home</a>
+							</li>
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">About</a>
+							</li>
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">Contact</a>
+							</li>
+						</ul>
 					</div>
-					<div class="callout">
-						<h2></h2>
-						<p></p>
-					</div>
-				</sidebar>
-			</section>
-			<footer>
-				<h2 class="footer__heading"></h2>
-					<div class="col footer__column-1">
+					<div class="footer__nav-group">
 						<h3></h3>
-						<p></p>
+						<ul class="footer__nav-list">
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">Lorem ipsum</a>
+							</li>
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">dolor</a>
+							</li>
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">sit amet</a>
+							</li>
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">consctetur</a>
+							</li>
+						</ul>
 					</div>
-					<nav class="footer__nav">
-						<div class="footer__nav-group">
-							<h3></h3>
-							<ul class="footer__nav-list">
-								<li class="footer__nav-item"></li>
-								<li class="footer__nav-item"></li>
-								<li class="footer__nav-item"></li>
-							</ul>
-						</div>
-						<div class="footer__nav-group">
-							<h3></h3>
-							<ul class="footer__nav-list">
-								<li class="footer__nav-item"></li>
-								<li class="footer__nav-item"></li>
-								<li class="footer__nav-item"></li>
-								<li class="footer__nav-item"></li>
-							</ul>
-						</div>
-						<div class="footer__nav-group">
-							<h3></h3>
-							<ul class="footer__nav-list">
-								<li class="footer__nav-item"></li>
-								<li class="footer__nav-item"></li>
-								<li class="footer__nav-item"></li>
-								<li class="footer__nav-item"></li>
-							</ul>
-						</div>
-					</nav>
-			</footer>
-		</main>
-	</head>	
+					<div class="footer__nav-group">
+						<h3></h3>
+						<ul class="footer__nav-list">
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">magna</a>
+							</li>
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">Ut enim</a>
+							</li>
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">adipiscing</a>
+							</li>
+							<li class="footer__nav-item">
+								<a class="footer__nav-item--link" href="#">sed do</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+		</footer>
+	</main>
 </body>
 </html>
