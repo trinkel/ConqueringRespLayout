@@ -7,6 +7,7 @@
 	--accent-color: #a59678;
 	--heading-font: 'Oswald', sans-serif;
 	--text-font: 'Montserrat', sans-serif;
+	font-size: 16px;
 } 
 
 *, *::before, *::after {
@@ -16,7 +17,7 @@
 body {
 	margin: 0;
 	font-family: var(--text-font);
-	font-size: 16px;
+	font-size: 1.3125rem;
 	line-height: 1.6;
 }
 
@@ -28,14 +29,14 @@ img {
 header {
 	background-color: var(--dark-bg);
 	text-align: center;
-	padding: 2em;
+	padding: 1em 0;
 }
 
 h1 {
 	font-family: var(--heading-font);
 	font-weight: bold;
-	font-size: 4rem;
-	line-height: 1;
+	font-size: 3.5rem;
+	line-height: 1.05;
 }
 
 h2 {
@@ -63,8 +64,8 @@ a:focus {
 .nav-toggle {
 	cursor: pointer;
 	border: none;
-	width: 3.5em;
-	height: 3.5em;
+	width: 3em;
+	height: 3em;
 	padding: 0;
 	border-radius: 50%;
 	background-color: var(--solid-color);
@@ -117,22 +118,29 @@ a:focus {
 	visibility: hidden;
 	height: 0;
 	position: absolute;
+	font-size: 1.125rem;
+	font-family: var(--heading-font);
+	text-transform: uppercase;
+	letter-spacing: .05em;
 }
 
 .nav__list {
 	padding: 0;
-	margin: 1em 0;
+	margin: .9em 0;
 	list-style: none;
 }
 
 .nav__item {
-	padding: .5em;
+	margin: .5em;
+}
+
+.nav__link--button {
+	padding: .1em 1.5em;
+	background-color: var(--accent-color);
+	border-radius: 1000px;
 }
 
 .nav__link {
-	font-size: 1.125rem;
-	font-family: var(--heading-font);
-	font-weight: bold;
 	color: var(--paper-color);
 }
 
