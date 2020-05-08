@@ -278,3 +278,21 @@ a:focus,
 .footer__nav--link {
 	color: var(--paper-color);
 }
+
+@media (min-width: 700px) {
+	.sidebar, .footer__nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.callout, .footer__nav--group {
+		width: 32%;
+		padding: .75em;
+	}
+
+	.callout {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
