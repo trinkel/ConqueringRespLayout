@@ -41,6 +41,7 @@ header {
 	background-color: var(--dark-bg);
 	text-align: center;
 	padding: 1em 0;
+	align-items: center;
 }
 
 h1 {
@@ -131,7 +132,7 @@ a:focus,
 }
 
 .logo {
-	height: 3.5em;
+	/* height: 3.5em; */
 	line-height: 0;
 }
 
@@ -280,7 +281,38 @@ a:focus,
 }
 
 @media (min-width: 700px) {
-	.sidebar, .footer__nav {
+	.header__content {
+		align-items: center;
+	}
+	
+	.nav-toggle {
+		display: none;
+	}
+
+	.nav {
+		position: relative;
+		width: auto;
+		visibility: visible;
+	}
+
+	.nav__list {
+		margin: 0;
+	}
+
+	.nav__list + .nav__list {
+		margin-left: 4.5vw;
+	}
+
+	.nav__item {
+		display: inline;
+		margin: 0;
+	}
+
+	.nav__item + .nav__item {
+		margin-left: 2.5vw;
+	}
+
+	.row--med {
 		display: flex;
 		justify-content: space-between;
 	}
